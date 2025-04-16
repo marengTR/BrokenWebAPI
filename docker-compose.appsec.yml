@@ -1,0 +1,37 @@
+version: "3.8"
+
+services:
+  semgrep:
+    image: returntocorp/semgrep:latest
+    container_name: semgrep
+    working_dir: /src
+    volumes:
+      - .:/src
+    command: >
+      semgrep
+      --config p/owasp-top-ten
+      --json
+      --output /src/semgrep-results.json
+
+  trivy:
+    image: aquasec/trivy:latest
+    container_name: trivy
+    volumes:
+      - .:/project
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: /project
+    command: >
+      image -f json  -o /project/trivy-image-results.json bwa:2
+
+  snyk:
+    image: snyk/snyk:docker
+    container_name: snyk
+    environment:
+      - SNYK_TOKEN=${SNYK_TOKEN}
+    working_dir: /project
+    volumes:
+      - .:/project
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: >
+      snyk test --json-file-output=/project/snyk-image-results.json --docker bwa:2
+
