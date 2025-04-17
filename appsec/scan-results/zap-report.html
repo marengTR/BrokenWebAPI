@@ -212,7 +212,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Wed, 16 Apr 2025 21:56:00
+		Generated on Thu, 17 Apr 2025 10:19:29
 	</h3>
 
 	<h3>
@@ -245,7 +245,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>0</div>
+					<div>1</div>
 				</td>
 			</tr>
 			<tr>
@@ -296,9 +296,14 @@ td {
 					align="center">Number of Instances</th>
 			</tr>
 			<tr>
+				<td><a href="#40040">CORS Misconfiguration</a></td>
+				<td align="center" class="risk-2">Medium</td>
+				<td align="center">4</td>
+			</tr>
+			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">4</td>
 			</tr>
 		</table>
 		<div class="spacer-lg"></div>
@@ -306,6 +311,192 @@ td {
 
 	
 		<h3>Alert Detail</h3>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-2"><a
+						id="40040"></a>
+						<div>Medium</div></th>
+					<th class="risk-2">CORS Misconfiguration</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>This CORS misconfiguration could allow an attacker to perform AJAX queries to the vulnerable website from a malicious page loaded by the victim&#39;s user agent.</div>
+							<br />
+						
+							<div>In order to perform authenticated AJAX queries, the server must specify the header &quot;Access-Control-Allow-Credentials: true&quot; and the &quot;Access-Control-Allow-Origin&quot; header must be set to null or the malicious page&#39;s domain. Even if this misconfiguration doesn&#39;t allow authenticated AJAX requests, unauthenticated sensitive content can still be accessed (e.g intranet websites).</div>
+							<br />
+						
+							<div>A malicious page can belong to a malicious website but also a trusted website with flaws (e.g XSS, support of HTTP without TLS allowing code injection through MITM, etc).</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://localhost:5000">http://localhost:5000</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%">origin: http://vZgP9zqN.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://localhost:5000/">http://localhost:5000/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%">origin: http://vZgP9zqN.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://localhost:5000/robots.txt">http://localhost:5000/robots.txt</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%">origin: http://vZgP9zqN.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://localhost:5000/sitemap.xml">http://localhost:5000/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%">origin: http://vZgP9zqN.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">4</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>If a web resource contains sensitive information, the origin should be properly specified in the Access-Control-Allow-Origin header. Only trusted websites needing this resource should be specified in this header, with the most secured protocol supported.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS</a>
+							<br />
+						
+							<a href="https://portswigger.net/web-security/cors">https://portswigger.net/web-security/cors</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/942.html">942</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">14</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/40040/">40040</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
 		
 			<table class="results">
 				<tr height="24">
@@ -329,6 +520,37 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="http://localhost:5000">http://localhost:5000</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="http://localhost:5000/">http://localhost:5000/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -420,7 +642,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">4</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>

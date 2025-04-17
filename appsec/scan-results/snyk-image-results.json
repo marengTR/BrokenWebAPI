@@ -1240,7 +1240,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `gcc-10` package and not the `gcc-10` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\n**DISPUTED**A failure in the -fstack-protector feature in GCC-based toolchains \nthat target AArch64 allows an attacker to exploit an existing buffer \noverflow in dynamically-sized local variables in your application \nwithout this being detected. This stack-protector failure only applies \nto C99-style dynamically-sized local variables or those created using \nalloca(). The stack-protector operates as intended for statically-sized \nlocal variables.\n\nThe default behavior when the stack-protector \ndetects an overflow is to terminate your application, resulting in \ncontrolled loss of availability. An attacker who can exploit a buffer \noverflow without triggering the stack-protector might be able to change \nprogram flow control to cause an uncontrolled loss of availability or to\n go further and affect confidentiality or integrity. NOTE: The GCC project argues that this is a missed hardening bug and not a vulnerability by itself.\n## Remediation\nThere is no fixed version for `Debian:11` `gcc-10`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-4039](https://security-tracker.debian.org/tracker/CVE-2023-4039)\n- [https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64](https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64)\n- [https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf](https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf)\n",
       "epssDetails": {
-        "percentile": "0.40101",
+        "percentile": "0.40072",
         "probability": "0.00206",
         "modelVersion": "v2025.03.14"
       },
@@ -1379,7 +1379,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `gcc-10` package and not the `gcc-10` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\n**DISPUTED**A failure in the -fstack-protector feature in GCC-based toolchains \nthat target AArch64 allows an attacker to exploit an existing buffer \noverflow in dynamically-sized local variables in your application \nwithout this being detected. This stack-protector failure only applies \nto C99-style dynamically-sized local variables or those created using \nalloca(). The stack-protector operates as intended for statically-sized \nlocal variables.\n\nThe default behavior when the stack-protector \ndetects an overflow is to terminate your application, resulting in \ncontrolled loss of availability. An attacker who can exploit a buffer \noverflow without triggering the stack-protector might be able to change \nprogram flow control to cause an uncontrolled loss of availability or to\n go further and affect confidentiality or integrity. NOTE: The GCC project argues that this is a missed hardening bug and not a vulnerability by itself.\n## Remediation\nThere is no fixed version for `Debian:11` `gcc-10`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-4039](https://security-tracker.debian.org/tracker/CVE-2023-4039)\n- [https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64](https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64)\n- [https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf](https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf)\n",
       "epssDetails": {
-        "percentile": "0.40101",
+        "percentile": "0.40072",
         "probability": "0.00206",
         "modelVersion": "v2025.03.14"
       },
@@ -1519,7 +1519,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `gcc-10` package and not the `gcc-10` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\n**DISPUTED**A failure in the -fstack-protector feature in GCC-based toolchains \nthat target AArch64 allows an attacker to exploit an existing buffer \noverflow in dynamically-sized local variables in your application \nwithout this being detected. This stack-protector failure only applies \nto C99-style dynamically-sized local variables or those created using \nalloca(). The stack-protector operates as intended for statically-sized \nlocal variables.\n\nThe default behavior when the stack-protector \ndetects an overflow is to terminate your application, resulting in \ncontrolled loss of availability. An attacker who can exploit a buffer \noverflow without triggering the stack-protector might be able to change \nprogram flow control to cause an uncontrolled loss of availability or to\n go further and affect confidentiality or integrity. NOTE: The GCC project argues that this is a missed hardening bug and not a vulnerability by itself.\n## Remediation\nThere is no fixed version for `Debian:11` `gcc-10`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-4039](https://security-tracker.debian.org/tracker/CVE-2023-4039)\n- [https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64](https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64)\n- [https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf](https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf)\n",
       "epssDetails": {
-        "percentile": "0.40101",
+        "percentile": "0.40072",
         "probability": "0.00206",
         "modelVersion": "v2025.03.14"
       },
@@ -1659,7 +1659,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `gcc-10` package and not the `gcc-10` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\n**DISPUTED**A failure in the -fstack-protector feature in GCC-based toolchains \nthat target AArch64 allows an attacker to exploit an existing buffer \noverflow in dynamically-sized local variables in your application \nwithout this being detected. This stack-protector failure only applies \nto C99-style dynamically-sized local variables or those created using \nalloca(). The stack-protector operates as intended for statically-sized \nlocal variables.\n\nThe default behavior when the stack-protector \ndetects an overflow is to terminate your application, resulting in \ncontrolled loss of availability. An attacker who can exploit a buffer \noverflow without triggering the stack-protector might be able to change \nprogram flow control to cause an uncontrolled loss of availability or to\n go further and affect confidentiality or integrity. NOTE: The GCC project argues that this is a missed hardening bug and not a vulnerability by itself.\n## Remediation\nThere is no fixed version for `Debian:11` `gcc-10`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-4039](https://security-tracker.debian.org/tracker/CVE-2023-4039)\n- [https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64](https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64)\n- [https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf](https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf)\n",
       "epssDetails": {
-        "percentile": "0.40101",
+        "percentile": "0.40072",
         "probability": "0.00206",
         "modelVersion": "v2025.03.14"
       },
@@ -1800,7 +1800,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `gcc-10` package and not the `gcc-10` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\n**DISPUTED**A failure in the -fstack-protector feature in GCC-based toolchains \nthat target AArch64 allows an attacker to exploit an existing buffer \noverflow in dynamically-sized local variables in your application \nwithout this being detected. This stack-protector failure only applies \nto C99-style dynamically-sized local variables or those created using \nalloca(). The stack-protector operates as intended for statically-sized \nlocal variables.\n\nThe default behavior when the stack-protector \ndetects an overflow is to terminate your application, resulting in \ncontrolled loss of availability. An attacker who can exploit a buffer \noverflow without triggering the stack-protector might be able to change \nprogram flow control to cause an uncontrolled loss of availability or to\n go further and affect confidentiality or integrity. NOTE: The GCC project argues that this is a missed hardening bug and not a vulnerability by itself.\n## Remediation\nThere is no fixed version for `Debian:11` `gcc-10`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-4039](https://security-tracker.debian.org/tracker/CVE-2023-4039)\n- [https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64](https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64)\n- [https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf](https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf)\n",
       "epssDetails": {
-        "percentile": "0.40101",
+        "percentile": "0.40072",
         "probability": "0.00206",
         "modelVersion": "v2025.03.14"
       },
@@ -1939,7 +1939,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `gcc-10` package and not the `gcc-10` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\n**DISPUTED**A failure in the -fstack-protector feature in GCC-based toolchains \nthat target AArch64 allows an attacker to exploit an existing buffer \noverflow in dynamically-sized local variables in your application \nwithout this being detected. This stack-protector failure only applies \nto C99-style dynamically-sized local variables or those created using \nalloca(). The stack-protector operates as intended for statically-sized \nlocal variables.\n\nThe default behavior when the stack-protector \ndetects an overflow is to terminate your application, resulting in \ncontrolled loss of availability. An attacker who can exploit a buffer \noverflow without triggering the stack-protector might be able to change \nprogram flow control to cause an uncontrolled loss of availability or to\n go further and affect confidentiality or integrity. NOTE: The GCC project argues that this is a missed hardening bug and not a vulnerability by itself.\n## Remediation\nThere is no fixed version for `Debian:11` `gcc-10`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-4039](https://security-tracker.debian.org/tracker/CVE-2023-4039)\n- [https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64](https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64)\n- [https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf](https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf)\n",
       "epssDetails": {
-        "percentile": "0.40101",
+        "percentile": "0.40072",
         "probability": "0.00206",
         "modelVersion": "v2025.03.14"
       },
@@ -2078,7 +2078,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `gcc-9` package and not the `gcc-9` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\n**DISPUTED**A failure in the -fstack-protector feature in GCC-based toolchains \nthat target AArch64 allows an attacker to exploit an existing buffer \noverflow in dynamically-sized local variables in your application \nwithout this being detected. This stack-protector failure only applies \nto C99-style dynamically-sized local variables or those created using \nalloca(). The stack-protector operates as intended for statically-sized \nlocal variables.\n\nThe default behavior when the stack-protector \ndetects an overflow is to terminate your application, resulting in \ncontrolled loss of availability. An attacker who can exploit a buffer \noverflow without triggering the stack-protector might be able to change \nprogram flow control to cause an uncontrolled loss of availability or to\n go further and affect confidentiality or integrity. NOTE: The GCC project argues that this is a missed hardening bug and not a vulnerability by itself.\n## Remediation\nThere is no fixed version for `Debian:11` `gcc-9`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-4039](https://security-tracker.debian.org/tracker/CVE-2023-4039)\n- [https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64](https://developer.arm.com/Arm%20Security%20Center/GCC%20Stack%20Protector%20Vulnerability%20AArch64)\n- [https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf](https://github.com/metaredteam/external-disclosures/security/advisories/GHSA-x7ch-h5rf-w2mf)\n",
       "epssDetails": {
-        "percentile": "0.40101",
+        "percentile": "0.40072",
         "probability": "0.00206",
         "modelVersion": "v2025.03.14"
       },
@@ -3500,8 +3500,8 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `glibc` package and not the `glibc` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nWhen the assert() function in the GNU C Library versions 2.13 to 2.40 fails, it does not allocate enough space for the assertion failure message string and size information, which may lead to a buffer overflow if the message string size aligns to page size.\n## Remediation\nThere is no fixed version for `Debian:11` `glibc`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2025-0395](https://security-tracker.debian.org/tracker/CVE-2025-0395)\n- [https://sourceware.org/bugzilla/show_bug.cgi?id=32582](https://sourceware.org/bugzilla/show_bug.cgi?id=32582)\n- [https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2025-0001](https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2025-0001)\n- [https://sourceware.org/pipermail/libc-announce/2025/000044.html](https://sourceware.org/pipermail/libc-announce/2025/000044.html)\n- [https://www.openwall.com/lists/oss-security/2025/01/22/4](https://www.openwall.com/lists/oss-security/2025/01/22/4)\n- [http://www.openwall.com/lists/oss-security/2025/01/22/4](http://www.openwall.com/lists/oss-security/2025/01/22/4)\n- [http://www.openwall.com/lists/oss-security/2025/01/23/2](http://www.openwall.com/lists/oss-security/2025/01/23/2)\n- [https://security.netapp.com/advisory/ntap-20250228-0006/](https://security.netapp.com/advisory/ntap-20250228-0006/)\n- [http://www.openwall.com/lists/oss-security/2025/04/13/1](http://www.openwall.com/lists/oss-security/2025/04/13/1)\n",
       "epssDetails": {
-        "percentile": "0.40760",
-        "probability": "0.00211",
+        "percentile": "0.30189",
+        "probability": "0.00136",
         "modelVersion": "v2025.03.14"
       },
       "identifiers": {
@@ -4922,8 +4922,8 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `glibc` package and not the `glibc` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nWhen the assert() function in the GNU C Library versions 2.13 to 2.40 fails, it does not allocate enough space for the assertion failure message string and size information, which may lead to a buffer overflow if the message string size aligns to page size.\n## Remediation\nThere is no fixed version for `Debian:11` `glibc`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2025-0395](https://security-tracker.debian.org/tracker/CVE-2025-0395)\n- [https://sourceware.org/bugzilla/show_bug.cgi?id=32582](https://sourceware.org/bugzilla/show_bug.cgi?id=32582)\n- [https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2025-0001](https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2025-0001)\n- [https://sourceware.org/pipermail/libc-announce/2025/000044.html](https://sourceware.org/pipermail/libc-announce/2025/000044.html)\n- [https://www.openwall.com/lists/oss-security/2025/01/22/4](https://www.openwall.com/lists/oss-security/2025/01/22/4)\n- [http://www.openwall.com/lists/oss-security/2025/01/22/4](http://www.openwall.com/lists/oss-security/2025/01/22/4)\n- [http://www.openwall.com/lists/oss-security/2025/01/23/2](http://www.openwall.com/lists/oss-security/2025/01/23/2)\n- [https://security.netapp.com/advisory/ntap-20250228-0006/](https://security.netapp.com/advisory/ntap-20250228-0006/)\n- [http://www.openwall.com/lists/oss-security/2025/04/13/1](http://www.openwall.com/lists/oss-security/2025/04/13/1)\n",
       "epssDetails": {
-        "percentile": "0.40760",
-        "probability": "0.00211",
+        "percentile": "0.30189",
+        "probability": "0.00136",
         "modelVersion": "v2025.03.14"
       },
       "identifiers": {
@@ -6951,7 +6951,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `krb5` package and not the `krb5` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nKerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.\n## Remediation\nThere is no fixed version for `Debian:11` `krb5`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-26461](https://security-tracker.debian.org/tracker/CVE-2024-26461)\n- [https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md](https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md)\n- [https://security.netapp.com/advisory/ntap-20240415-0011/](https://security.netapp.com/advisory/ntap-20240415-0011/)\n",
       "epssDetails": {
-        "percentile": "0.13662",
+        "percentile": "0.13568",
         "probability": "0.00053",
         "modelVersion": "v2025.03.14"
       },
@@ -7561,7 +7561,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `krb5` package and not the `krb5` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nKerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.\n## Remediation\nThere is no fixed version for `Debian:11` `krb5`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-26461](https://security-tracker.debian.org/tracker/CVE-2024-26461)\n- [https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md](https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md)\n- [https://security.netapp.com/advisory/ntap-20240415-0011/](https://security.netapp.com/advisory/ntap-20240415-0011/)\n",
       "epssDetails": {
-        "percentile": "0.13662",
+        "percentile": "0.13568",
         "probability": "0.00053",
         "modelVersion": "v2025.03.14"
       },
@@ -8184,7 +8184,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `krb5` package and not the `krb5` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nKerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.\n## Remediation\nThere is no fixed version for `Debian:11` `krb5`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-26461](https://security-tracker.debian.org/tracker/CVE-2024-26461)\n- [https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md](https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md)\n- [https://security.netapp.com/advisory/ntap-20240415-0011/](https://security.netapp.com/advisory/ntap-20240415-0011/)\n",
       "epssDetails": {
-        "percentile": "0.13662",
+        "percentile": "0.13568",
         "probability": "0.00053",
         "modelVersion": "v2025.03.14"
       },
@@ -8792,7 +8792,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `krb5` package and not the `krb5` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nKerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.\n## Remediation\nThere is no fixed version for `Debian:11` `krb5`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-26461](https://security-tracker.debian.org/tracker/CVE-2024-26461)\n- [https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md](https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md)\n- [https://security.netapp.com/advisory/ntap-20240415-0011/](https://security.netapp.com/advisory/ntap-20240415-0011/)\n",
       "epssDetails": {
-        "percentile": "0.13662",
+        "percentile": "0.13568",
         "probability": "0.00053",
         "modelVersion": "v2025.03.14"
       },
@@ -9403,7 +9403,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `krb5` package and not the `krb5` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nKerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.\n## Remediation\nThere is no fixed version for `Debian:11` `krb5`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-26461](https://security-tracker.debian.org/tracker/CVE-2024-26461)\n- [https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md](https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md)\n- [https://security.netapp.com/advisory/ntap-20240415-0011/](https://security.netapp.com/advisory/ntap-20240415-0011/)\n",
       "epssDetails": {
-        "percentile": "0.13662",
+        "percentile": "0.13568",
         "probability": "0.00053",
         "modelVersion": "v2025.03.14"
       },
@@ -10009,7 +10009,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `krb5` package and not the `krb5` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nKerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.\n## Remediation\nThere is no fixed version for `Debian:11` `krb5`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-26461](https://security-tracker.debian.org/tracker/CVE-2024-26461)\n- [https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md](https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md)\n- [https://security.netapp.com/advisory/ntap-20240415-0011/](https://security.netapp.com/advisory/ntap-20240415-0011/)\n",
       "epssDetails": {
-        "percentile": "0.13662",
+        "percentile": "0.13568",
         "probability": "0.00053",
         "modelVersion": "v2025.03.14"
       },
@@ -14037,7 +14037,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nIssue summary: A timing side-channel which could potentially allow recovering\nthe private key exists in the ECDSA signature computation.\n\nImpact summary: A timing side-channel in ECDSA signature computations\ncould allow recovering the private key by an attacker. However, measuring\nthe timing would require either local access to the signing application or\na very fast network connection with low latency.\n\nThere is a timing signal of around 300 nanoseconds when the top word of\nthe inverted ECDSA nonce value is zero. This can happen with significant\nprobability only for some of the supported elliptic curves. In particular\nthe NIST P-521 curve is affected. To be able to measure this leak, the attacker\nprocess must either be located in the same physical computer or must\nhave a very fast network connection with low latency. For that reason\nthe severity of this vulnerability is Low.\n\nThe FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are affected by this issue.\n## Remediation\nThere is no fixed version for `Debian:11` `openssl`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-13176](https://security-tracker.debian.org/tracker/CVE-2024-13176)\n- [https://github.com/openssl/openssl/commit/07272b05b04836a762b4baa874958af51d513844](https://github.com/openssl/openssl/commit/07272b05b04836a762b4baa874958af51d513844)\n- [https://github.com/openssl/openssl/commit/2af62e74fb59bc469506bc37eb2990ea408d9467](https://github.com/openssl/openssl/commit/2af62e74fb59bc469506bc37eb2990ea408d9467)\n- [https://github.com/openssl/openssl/commit/392dcb336405a0c94486aa6655057f59fd3a0902](https://github.com/openssl/openssl/commit/392dcb336405a0c94486aa6655057f59fd3a0902)\n- [https://github.com/openssl/openssl/commit/4b1cb94a734a7d4ec363ac0a215a25c181e11f65](https://github.com/openssl/openssl/commit/4b1cb94a734a7d4ec363ac0a215a25c181e11f65)\n- [https://github.com/openssl/openssl/commit/77c608f4c8857e63e98e66444e2e761c9627916f](https://github.com/openssl/openssl/commit/77c608f4c8857e63e98e66444e2e761c9627916f)\n- [https://github.openssl.org/openssl/extended-releases/commit/0d5fd1ab987f7571e2c955d8d8b638fc0fb54ded](https://github.openssl.org/openssl/extended-releases/commit/0d5fd1ab987f7571e2c955d8d8b638fc0fb54ded)\n- [https://github.openssl.org/openssl/extended-releases/commit/a2639000db19878d5d89586ae7b725080592ae86](https://github.openssl.org/openssl/extended-releases/commit/a2639000db19878d5d89586ae7b725080592ae86)\n- [https://openssl-library.org/news/secadv/20250120.txt](https://openssl-library.org/news/secadv/20250120.txt)\n- [http://www.openwall.com/lists/oss-security/2025/01/20/2](http://www.openwall.com/lists/oss-security/2025/01/20/2)\n- [https://security.netapp.com/advisory/ntap-20250124-0005/](https://security.netapp.com/advisory/ntap-20250124-0005/)\n",
       "epssDetails": {
-        "percentile": "0.19807",
+        "percentile": "0.19752",
         "probability": "0.00075",
         "modelVersion": "v2025.03.14"
       },
@@ -14192,7 +14192,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nIssue summary: A timing side-channel which could potentially allow recovering\nthe private key exists in the ECDSA signature computation.\n\nImpact summary: A timing side-channel in ECDSA signature computations\ncould allow recovering the private key by an attacker. However, measuring\nthe timing would require either local access to the signing application or\na very fast network connection with low latency.\n\nThere is a timing signal of around 300 nanoseconds when the top word of\nthe inverted ECDSA nonce value is zero. This can happen with significant\nprobability only for some of the supported elliptic curves. In particular\nthe NIST P-521 curve is affected. To be able to measure this leak, the attacker\nprocess must either be located in the same physical computer or must\nhave a very fast network connection with low latency. For that reason\nthe severity of this vulnerability is Low.\n\nThe FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are affected by this issue.\n## Remediation\nThere is no fixed version for `Debian:11` `openssl`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-13176](https://security-tracker.debian.org/tracker/CVE-2024-13176)\n- [https://github.com/openssl/openssl/commit/07272b05b04836a762b4baa874958af51d513844](https://github.com/openssl/openssl/commit/07272b05b04836a762b4baa874958af51d513844)\n- [https://github.com/openssl/openssl/commit/2af62e74fb59bc469506bc37eb2990ea408d9467](https://github.com/openssl/openssl/commit/2af62e74fb59bc469506bc37eb2990ea408d9467)\n- [https://github.com/openssl/openssl/commit/392dcb336405a0c94486aa6655057f59fd3a0902](https://github.com/openssl/openssl/commit/392dcb336405a0c94486aa6655057f59fd3a0902)\n- [https://github.com/openssl/openssl/commit/4b1cb94a734a7d4ec363ac0a215a25c181e11f65](https://github.com/openssl/openssl/commit/4b1cb94a734a7d4ec363ac0a215a25c181e11f65)\n- [https://github.com/openssl/openssl/commit/77c608f4c8857e63e98e66444e2e761c9627916f](https://github.com/openssl/openssl/commit/77c608f4c8857e63e98e66444e2e761c9627916f)\n- [https://github.openssl.org/openssl/extended-releases/commit/0d5fd1ab987f7571e2c955d8d8b638fc0fb54ded](https://github.openssl.org/openssl/extended-releases/commit/0d5fd1ab987f7571e2c955d8d8b638fc0fb54ded)\n- [https://github.openssl.org/openssl/extended-releases/commit/a2639000db19878d5d89586ae7b725080592ae86](https://github.openssl.org/openssl/extended-releases/commit/a2639000db19878d5d89586ae7b725080592ae86)\n- [https://openssl-library.org/news/secadv/20250120.txt](https://openssl-library.org/news/secadv/20250120.txt)\n- [http://www.openwall.com/lists/oss-security/2025/01/20/2](http://www.openwall.com/lists/oss-security/2025/01/20/2)\n- [https://security.netapp.com/advisory/ntap-20250124-0005/](https://security.netapp.com/advisory/ntap-20250124-0005/)\n",
       "epssDetails": {
-        "percentile": "0.19807",
+        "percentile": "0.19752",
         "probability": "0.00075",
         "modelVersion": "v2025.03.14"
       },
@@ -14349,7 +14349,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nIssue summary: A timing side-channel which could potentially allow recovering\nthe private key exists in the ECDSA signature computation.\n\nImpact summary: A timing side-channel in ECDSA signature computations\ncould allow recovering the private key by an attacker. However, measuring\nthe timing would require either local access to the signing application or\na very fast network connection with low latency.\n\nThere is a timing signal of around 300 nanoseconds when the top word of\nthe inverted ECDSA nonce value is zero. This can happen with significant\nprobability only for some of the supported elliptic curves. In particular\nthe NIST P-521 curve is affected. To be able to measure this leak, the attacker\nprocess must either be located in the same physical computer or must\nhave a very fast network connection with low latency. For that reason\nthe severity of this vulnerability is Low.\n\nThe FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are affected by this issue.\n## Remediation\nThere is no fixed version for `Debian:11` `openssl`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-13176](https://security-tracker.debian.org/tracker/CVE-2024-13176)\n- [https://github.com/openssl/openssl/commit/07272b05b04836a762b4baa874958af51d513844](https://github.com/openssl/openssl/commit/07272b05b04836a762b4baa874958af51d513844)\n- [https://github.com/openssl/openssl/commit/2af62e74fb59bc469506bc37eb2990ea408d9467](https://github.com/openssl/openssl/commit/2af62e74fb59bc469506bc37eb2990ea408d9467)\n- [https://github.com/openssl/openssl/commit/392dcb336405a0c94486aa6655057f59fd3a0902](https://github.com/openssl/openssl/commit/392dcb336405a0c94486aa6655057f59fd3a0902)\n- [https://github.com/openssl/openssl/commit/4b1cb94a734a7d4ec363ac0a215a25c181e11f65](https://github.com/openssl/openssl/commit/4b1cb94a734a7d4ec363ac0a215a25c181e11f65)\n- [https://github.com/openssl/openssl/commit/77c608f4c8857e63e98e66444e2e761c9627916f](https://github.com/openssl/openssl/commit/77c608f4c8857e63e98e66444e2e761c9627916f)\n- [https://github.openssl.org/openssl/extended-releases/commit/0d5fd1ab987f7571e2c955d8d8b638fc0fb54ded](https://github.openssl.org/openssl/extended-releases/commit/0d5fd1ab987f7571e2c955d8d8b638fc0fb54ded)\n- [https://github.openssl.org/openssl/extended-releases/commit/a2639000db19878d5d89586ae7b725080592ae86](https://github.openssl.org/openssl/extended-releases/commit/a2639000db19878d5d89586ae7b725080592ae86)\n- [https://openssl-library.org/news/secadv/20250120.txt](https://openssl-library.org/news/secadv/20250120.txt)\n- [http://www.openwall.com/lists/oss-security/2025/01/20/2](http://www.openwall.com/lists/oss-security/2025/01/20/2)\n- [https://security.netapp.com/advisory/ntap-20250124-0005/](https://security.netapp.com/advisory/ntap-20250124-0005/)\n",
       "epssDetails": {
-        "percentile": "0.19807",
+        "percentile": "0.19752",
         "probability": "0.00075",
         "modelVersion": "v2025.03.14"
       },
@@ -14506,7 +14506,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `openssl` package and not the `openssl` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nIssue summary: A timing side-channel which could potentially allow recovering\nthe private key exists in the ECDSA signature computation.\n\nImpact summary: A timing side-channel in ECDSA signature computations\ncould allow recovering the private key by an attacker. However, measuring\nthe timing would require either local access to the signing application or\na very fast network connection with low latency.\n\nThere is a timing signal of around 300 nanoseconds when the top word of\nthe inverted ECDSA nonce value is zero. This can happen with significant\nprobability only for some of the supported elliptic curves. In particular\nthe NIST P-521 curve is affected. To be able to measure this leak, the attacker\nprocess must either be located in the same physical computer or must\nhave a very fast network connection with low latency. For that reason\nthe severity of this vulnerability is Low.\n\nThe FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are affected by this issue.\n## Remediation\nThere is no fixed version for `Debian:11` `openssl`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-13176](https://security-tracker.debian.org/tracker/CVE-2024-13176)\n- [https://github.com/openssl/openssl/commit/07272b05b04836a762b4baa874958af51d513844](https://github.com/openssl/openssl/commit/07272b05b04836a762b4baa874958af51d513844)\n- [https://github.com/openssl/openssl/commit/2af62e74fb59bc469506bc37eb2990ea408d9467](https://github.com/openssl/openssl/commit/2af62e74fb59bc469506bc37eb2990ea408d9467)\n- [https://github.com/openssl/openssl/commit/392dcb336405a0c94486aa6655057f59fd3a0902](https://github.com/openssl/openssl/commit/392dcb336405a0c94486aa6655057f59fd3a0902)\n- [https://github.com/openssl/openssl/commit/4b1cb94a734a7d4ec363ac0a215a25c181e11f65](https://github.com/openssl/openssl/commit/4b1cb94a734a7d4ec363ac0a215a25c181e11f65)\n- [https://github.com/openssl/openssl/commit/77c608f4c8857e63e98e66444e2e761c9627916f](https://github.com/openssl/openssl/commit/77c608f4c8857e63e98e66444e2e761c9627916f)\n- [https://github.openssl.org/openssl/extended-releases/commit/0d5fd1ab987f7571e2c955d8d8b638fc0fb54ded](https://github.openssl.org/openssl/extended-releases/commit/0d5fd1ab987f7571e2c955d8d8b638fc0fb54ded)\n- [https://github.openssl.org/openssl/extended-releases/commit/a2639000db19878d5d89586ae7b725080592ae86](https://github.openssl.org/openssl/extended-releases/commit/a2639000db19878d5d89586ae7b725080592ae86)\n- [https://openssl-library.org/news/secadv/20250120.txt](https://openssl-library.org/news/secadv/20250120.txt)\n- [http://www.openwall.com/lists/oss-security/2025/01/20/2](http://www.openwall.com/lists/oss-security/2025/01/20/2)\n- [https://security.netapp.com/advisory/ntap-20250124-0005/](https://security.netapp.com/advisory/ntap-20250124-0005/)\n",
       "epssDetails": {
-        "percentile": "0.19807",
+        "percentile": "0.19752",
         "probability": "0.00075",
         "modelVersion": "v2025.03.14"
       },
@@ -14789,7 +14789,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -15074,7 +15074,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -15361,7 +15361,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -15649,7 +15649,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -15938,7 +15938,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -16229,7 +16229,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -16517,7 +16517,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -16804,7 +16804,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -17091,7 +17091,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -17376,7 +17376,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -17662,7 +17662,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -17949,7 +17949,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -18235,7 +18235,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -18520,7 +18520,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `pam` package and not the `pam` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications.\n## Remediation\nThere is no fixed version for `Debian:11` `pam`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2024-10041](https://security-tracker.debian.org/tracker/CVE-2024-10041)\n- [https://access.redhat.com/security/cve/CVE-2024-10041](https://access.redhat.com/security/cve/CVE-2024-10041)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2319212](https://bugzilla.redhat.com/show_bug.cgi?id=2319212)\n- [https://access.redhat.com/errata/RHSA-2024:9941](https://access.redhat.com/errata/RHSA-2024:9941)\n- [https://access.redhat.com/errata/RHSA-2024:10379](https://access.redhat.com/errata/RHSA-2024:10379)\n- [https://access.redhat.com/errata/RHSA-2024:11250](https://access.redhat.com/errata/RHSA-2024:11250)\n",
       "epssDetails": {
-        "percentile": "0.03507",
+        "percentile": "0.03488",
         "probability": "0.00022",
         "modelVersion": "v2025.03.14"
       },
@@ -20870,7 +20870,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `shadow` package and not the `shadow` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nIn Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that &#34;cat /etc/passwd&#34; shows a rogue user account.\n## Remediation\nThere is no fixed version for `Debian:11` `shadow`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-29383](https://security-tracker.debian.org/tracker/CVE-2023-29383)\n- [https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d](https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d)\n- [https://github.com/shadow-maint/shadow/pull/687](https://github.com/shadow-maint/shadow/pull/687)\n- [https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/)\n- [https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797](https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797)\n",
       "epssDetails": {
-        "percentile": "0.39325",
+        "percentile": "0.39273",
         "probability": "0.00200",
         "modelVersion": "v2025.03.14"
       },
@@ -21027,7 +21027,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `shadow` package and not the `shadow` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA flaw was found in shadow-utils. When asking for a new password, shadow-utils asks the password twice. If the password fails on the second attempt, shadow-utils fails in cleaning the buffer used to store the first entry. This may allow an attacker with enough access to retrieve the password from the memory.\n## Remediation\nThere is no fixed version for `Debian:11` `shadow`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-4641](https://security-tracker.debian.org/tracker/CVE-2023-4641)\n- [https://access.redhat.com/errata/RHSA-2023:6632](https://access.redhat.com/errata/RHSA-2023:6632)\n- [https://access.redhat.com/errata/RHSA-2023:7112](https://access.redhat.com/errata/RHSA-2023:7112)\n- [https://access.redhat.com/errata/RHSA-2024:0417](https://access.redhat.com/errata/RHSA-2024:0417)\n- [https://access.redhat.com/errata/RHSA-2024:2577](https://access.redhat.com/errata/RHSA-2024:2577)\n- [https://access.redhat.com/security/cve/CVE-2023-4641](https://access.redhat.com/security/cve/CVE-2023-4641)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2215945](https://bugzilla.redhat.com/show_bug.cgi?id=2215945)\n",
       "epssDetails": {
-        "percentile": "0.17641",
+        "percentile": "0.17580",
         "probability": "0.00066",
         "modelVersion": "v2025.03.14"
       },
@@ -21571,7 +21571,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `shadow` package and not the `shadow` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nIn Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that &#34;cat /etc/passwd&#34; shows a rogue user account.\n## Remediation\nThere is no fixed version for `Debian:11` `shadow`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-29383](https://security-tracker.debian.org/tracker/CVE-2023-29383)\n- [https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d](https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d)\n- [https://github.com/shadow-maint/shadow/pull/687](https://github.com/shadow-maint/shadow/pull/687)\n- [https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/)\n- [https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797](https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797)\n",
       "epssDetails": {
-        "percentile": "0.39325",
+        "percentile": "0.39273",
         "probability": "0.00200",
         "modelVersion": "v2025.03.14"
       },
@@ -21729,7 +21729,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `shadow` package and not the `shadow` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA flaw was found in shadow-utils. When asking for a new password, shadow-utils asks the password twice. If the password fails on the second attempt, shadow-utils fails in cleaning the buffer used to store the first entry. This may allow an attacker with enough access to retrieve the password from the memory.\n## Remediation\nThere is no fixed version for `Debian:11` `shadow`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-4641](https://security-tracker.debian.org/tracker/CVE-2023-4641)\n- [https://access.redhat.com/errata/RHSA-2023:6632](https://access.redhat.com/errata/RHSA-2023:6632)\n- [https://access.redhat.com/errata/RHSA-2023:7112](https://access.redhat.com/errata/RHSA-2023:7112)\n- [https://access.redhat.com/errata/RHSA-2024:0417](https://access.redhat.com/errata/RHSA-2024:0417)\n- [https://access.redhat.com/errata/RHSA-2024:2577](https://access.redhat.com/errata/RHSA-2024:2577)\n- [https://access.redhat.com/security/cve/CVE-2023-4641](https://access.redhat.com/security/cve/CVE-2023-4641)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2215945](https://bugzilla.redhat.com/show_bug.cgi?id=2215945)\n",
       "epssDetails": {
-        "percentile": "0.17641",
+        "percentile": "0.17580",
         "probability": "0.00066",
         "modelVersion": "v2025.03.14"
       },
@@ -22273,7 +22273,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `shadow` package and not the `shadow` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nIn Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that &#34;cat /etc/passwd&#34; shows a rogue user account.\n## Remediation\nThere is no fixed version for `Debian:11` `shadow`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-29383](https://security-tracker.debian.org/tracker/CVE-2023-29383)\n- [https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d](https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d)\n- [https://github.com/shadow-maint/shadow/pull/687](https://github.com/shadow-maint/shadow/pull/687)\n- [https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/)\n- [https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797](https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797)\n",
       "epssDetails": {
-        "percentile": "0.39325",
+        "percentile": "0.39273",
         "probability": "0.00200",
         "modelVersion": "v2025.03.14"
       },
@@ -22430,7 +22430,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `shadow` package and not the `shadow` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA flaw was found in shadow-utils. When asking for a new password, shadow-utils asks the password twice. If the password fails on the second attempt, shadow-utils fails in cleaning the buffer used to store the first entry. This may allow an attacker with enough access to retrieve the password from the memory.\n## Remediation\nThere is no fixed version for `Debian:11` `shadow`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-4641](https://security-tracker.debian.org/tracker/CVE-2023-4641)\n- [https://access.redhat.com/errata/RHSA-2023:6632](https://access.redhat.com/errata/RHSA-2023:6632)\n- [https://access.redhat.com/errata/RHSA-2023:7112](https://access.redhat.com/errata/RHSA-2023:7112)\n- [https://access.redhat.com/errata/RHSA-2024:0417](https://access.redhat.com/errata/RHSA-2024:0417)\n- [https://access.redhat.com/errata/RHSA-2024:2577](https://access.redhat.com/errata/RHSA-2024:2577)\n- [https://access.redhat.com/security/cve/CVE-2023-4641](https://access.redhat.com/security/cve/CVE-2023-4641)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2215945](https://bugzilla.redhat.com/show_bug.cgi?id=2215945)\n",
       "epssDetails": {
-        "percentile": "0.17641",
+        "percentile": "0.17580",
         "probability": "0.00066",
         "modelVersion": "v2025.03.14"
       },
@@ -22976,7 +22976,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `shadow` package and not the `shadow` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nIn Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that &#34;cat /etc/passwd&#34; shows a rogue user account.\n## Remediation\nThere is no fixed version for `Debian:11` `shadow`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-29383](https://security-tracker.debian.org/tracker/CVE-2023-29383)\n- [https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d](https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d)\n- [https://github.com/shadow-maint/shadow/pull/687](https://github.com/shadow-maint/shadow/pull/687)\n- [https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/)\n- [https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797](https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797)\n",
       "epssDetails": {
-        "percentile": "0.39325",
+        "percentile": "0.39273",
         "probability": "0.00200",
         "modelVersion": "v2025.03.14"
       },
@@ -23135,7 +23135,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `shadow` package and not the `shadow` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nA flaw was found in shadow-utils. When asking for a new password, shadow-utils asks the password twice. If the password fails on the second attempt, shadow-utils fails in cleaning the buffer used to store the first entry. This may allow an attacker with enough access to retrieve the password from the memory.\n## Remediation\nThere is no fixed version for `Debian:11` `shadow`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-4641](https://security-tracker.debian.org/tracker/CVE-2023-4641)\n- [https://access.redhat.com/errata/RHSA-2023:6632](https://access.redhat.com/errata/RHSA-2023:6632)\n- [https://access.redhat.com/errata/RHSA-2023:7112](https://access.redhat.com/errata/RHSA-2023:7112)\n- [https://access.redhat.com/errata/RHSA-2024:0417](https://access.redhat.com/errata/RHSA-2024:0417)\n- [https://access.redhat.com/errata/RHSA-2024:2577](https://access.redhat.com/errata/RHSA-2024:2577)\n- [https://access.redhat.com/security/cve/CVE-2023-4641](https://access.redhat.com/security/cve/CVE-2023-4641)\n- [https://bugzilla.redhat.com/show_bug.cgi?id=2215945](https://bugzilla.redhat.com/show_bug.cgi?id=2215945)\n",
       "epssDetails": {
-        "percentile": "0.17641",
+        "percentile": "0.17580",
         "probability": "0.00066",
         "modelVersion": "v2025.03.14"
       },
@@ -23774,7 +23774,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31438](https://security-tracker.debian.org/tracker/CVE-2023-31438)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28886](https://github.com/systemd/systemd/pull/28886)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28527",
+        "percentile": "0.28493",
         "probability": "0.00124",
         "modelVersion": "v2025.03.14"
       },
@@ -23891,7 +23891,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31439](https://security-tracker.debian.org/tracker/CVE-2023-31439)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28885](https://github.com/systemd/systemd/pull/28885)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28328",
+        "percentile": "0.28295",
         "probability": "0.00122",
         "modelVersion": "v2025.03.14"
       },
@@ -24418,7 +24418,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31438](https://security-tracker.debian.org/tracker/CVE-2023-31438)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28886](https://github.com/systemd/systemd/pull/28886)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28527",
+        "percentile": "0.28493",
         "probability": "0.00124",
         "modelVersion": "v2025.03.14"
       },
@@ -24536,7 +24536,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31439](https://security-tracker.debian.org/tracker/CVE-2023-31439)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28885](https://github.com/systemd/systemd/pull/28885)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28328",
+        "percentile": "0.28295",
         "probability": "0.00122",
         "modelVersion": "v2025.03.14"
       },
@@ -25064,7 +25064,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31438](https://security-tracker.debian.org/tracker/CVE-2023-31438)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28886](https://github.com/systemd/systemd/pull/28886)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28527",
+        "percentile": "0.28493",
         "probability": "0.00124",
         "modelVersion": "v2025.03.14"
       },
@@ -25182,7 +25182,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31439](https://security-tracker.debian.org/tracker/CVE-2023-31439)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28885](https://github.com/systemd/systemd/pull/28885)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28328",
+        "percentile": "0.28295",
         "probability": "0.00122",
         "modelVersion": "v2025.03.14"
       },
@@ -25713,7 +25713,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31438](https://security-tracker.debian.org/tracker/CVE-2023-31438)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28886](https://github.com/systemd/systemd/pull/28886)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28527",
+        "percentile": "0.28493",
         "probability": "0.00124",
         "modelVersion": "v2025.03.14"
       },
@@ -25832,7 +25832,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31439](https://security-tracker.debian.org/tracker/CVE-2023-31439)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28885](https://github.com/systemd/systemd/pull/28885)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28328",
+        "percentile": "0.28295",
         "probability": "0.00122",
         "modelVersion": "v2025.03.14"
       },
@@ -26364,7 +26364,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31438](https://security-tracker.debian.org/tracker/CVE-2023-31438)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28886](https://github.com/systemd/systemd/pull/28886)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28527",
+        "percentile": "0.28493",
         "probability": "0.00124",
         "modelVersion": "v2025.03.14"
       },
@@ -26483,7 +26483,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31439](https://security-tracker.debian.org/tracker/CVE-2023-31439)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28885](https://github.com/systemd/systemd/pull/28885)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28328",
+        "percentile": "0.28295",
         "probability": "0.00122",
         "modelVersion": "v2025.03.14"
       },
@@ -27009,7 +27009,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31438](https://security-tracker.debian.org/tracker/CVE-2023-31438)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28886](https://github.com/systemd/systemd/pull/28886)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28527",
+        "percentile": "0.28493",
         "probability": "0.00124",
         "modelVersion": "v2025.03.14"
       },
@@ -27126,7 +27126,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31439](https://security-tracker.debian.org/tracker/CVE-2023-31439)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28885](https://github.com/systemd/systemd/pull/28885)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28328",
+        "percentile": "0.28295",
         "probability": "0.00122",
         "modelVersion": "v2025.03.14"
       },
@@ -27656,7 +27656,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31438](https://security-tracker.debian.org/tracker/CVE-2023-31438)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28886](https://github.com/systemd/systemd/pull/28886)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28527",
+        "percentile": "0.28493",
         "probability": "0.00124",
         "modelVersion": "v2025.03.14"
       },
@@ -27775,7 +27775,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31439](https://security-tracker.debian.org/tracker/CVE-2023-31439)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28885](https://github.com/systemd/systemd/pull/28885)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28328",
+        "percentile": "0.28295",
         "probability": "0.00122",
         "modelVersion": "v2025.03.14"
       },
@@ -28307,7 +28307,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31438](https://security-tracker.debian.org/tracker/CVE-2023-31438)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28886](https://github.com/systemd/systemd/pull/28886)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28527",
+        "percentile": "0.28493",
         "probability": "0.00124",
         "modelVersion": "v2025.03.14"
       },
@@ -28426,7 +28426,7 @@
       ],
       "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply only to the upstream `systemd` package and not the `systemd` package as distributed by `Debian`._\n_See `How to fix?` for `Debian:11` relevant fixed versions and status._\n\nAn issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent &#34;a reply denying that any of the finding was a security vulnerability.&#34;\n## Remediation\nThere is no fixed version for `Debian:11` `systemd`.\n## References\n- [https://security-tracker.debian.org/tracker/CVE-2023-31439](https://security-tracker.debian.org/tracker/CVE-2023-31439)\n- [https://github.com/kastel-security/Journald](https://github.com/kastel-security/Journald)\n- [https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf](https://github.com/kastel-security/Journald/blob/main/journald-publication.pdf)\n- [https://github.com/systemd/systemd/pull/28885](https://github.com/systemd/systemd/pull/28885)\n- [https://github.com/systemd/systemd/releases](https://github.com/systemd/systemd/releases)\n",
       "epssDetails": {
-        "percentile": "0.28328",
+        "percentile": "0.28295",
         "probability": "0.00122",
         "modelVersion": "v2025.03.14"
       },

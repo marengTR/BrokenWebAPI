@@ -23,9 +23,9 @@ services:
     command: >
       image -f json  -o /project/trivy-image-results.json bwa:2
 
-  snyk:
+  snyk-docker:
     image: snyk/snyk:docker
-    container_name: snyk
+    container_name: snyk-docker
     environment:
       - SNYK_TOKEN=${SNYK_TOKEN}
     working_dir: /project
@@ -35,13 +35,44 @@ services:
     command: >
       snyk test --json-file-output=/project/snyk-image-results.json --docker bwa:2
 
+  snyk-test:
+    image: snyk/snyk:docker
+    container_name: snyk-test
+    environment:
+      - SNYK_TOKEN=${SNYK_TOKEN}
+    volumes:
+      - .:/project
+    command: >
+      snyk test --file=/project/BrokenWebAPI.sln --json-file-output=/project/snyk-test-results.json
+
+  snyk-code:
+    image: snyk/snyk:docker
+    container_name: snyk-code
+    environment:
+      - SNYK_TOKEN=${SNYK_TOKEN}
+    volumes:
+      - .:/project
+    command: >
+      snyk code test --file=/project/BrokenWebAPI.sln --json-file-output=/project/snyk-code-test-results.json
+
   zap:
     image: zaproxy/zap-stable
     container_name: zap
     network_mode: host
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 4G
+        reservations:
+          cpus: '1.0'
+          memory: 4G
     command: >
-      zap-baseline.py
+      zap-full-scan.py
       -t http://localhost:5000
+      -z "context.include=http://localhost:5000/api/.*"
+      -z "spider.maxDuration=5"
+      -J zap-fullscan-report.json
       -r zap-report.html
     volumes:
       - ./zap-reports:/zap/wrk
