@@ -1,0 +1,18 @@
+Pushed extraxtracted file to the github: https://github.com/marengTR/BrokenWebAPI
+
+Created branches for eah step, 
+  - Fixing build issue
+  - Adding security scanning tools,
+  - SCA, SAST, DAST and Secret scanning
+  - Assessment and emailing
+  - brief explanation of the process
+
+Added different tools into build process by using docker compose.
+  - I tried to add different tools for same purpose in order to compare results.
+  - Tried also one product to use for different purposes SCA, SAST, Container Scanning.
+
+Collected results in same place. (Automation can be implemented for managing findings from different sources and integrating with issue tracking systems like Jira).
+
+Made security assessment based on findings and created report that contains high level summary, detailed explanation.
+
+Written email to develeopment team(s) interfaces (Tech Leads, Engineerin Managers or Security Champions).
