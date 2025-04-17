@@ -1,0 +1,1740 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-DOTNET-MICROSOFTIDENTITYMODELJSONWEBTOKENS-6148656",
+      "title": "Resource Exhaustion",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,5.7.0)",
+          "[6.5.0,6.34.0)",
+          "[7.0.0-preview,7.1.2)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "5.7.0",
+        "6.34.0",
+        "7.1.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "dotnet",
+      "severity": "medium",
+      "cvssScore": 6.8,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "microsoft.identitymodel.jsonwebtokens",
+      "references": [
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/5.7.0",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/6.34.0",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/7.1.2",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki/zipcve",
+          "title": "GitHub Wiki"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.8,
+          "modificationTime": "2024-03-11T09:48:54.334896Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.8,
+          "modificationTime": "2024-03-11T09:48:57.857584Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-06T14:09:41.211448Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:48:54.334896Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:48:57.857584Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Resource Exhaustion by processing JSON Web Encryption (JWE) tokens with a high compression ratio. An attacker can cause excessive memory allocation and processing time during decompression, leading to a denial-of-service condition. This is only exploitable if the attacker has access to the public encrypt key registered with the IDP (Entra ID).\n## Remediation\nUpgrade `Microsoft.IdentityModel.JsonWebTokens` to version 5.7.0, 6.34.0, 7.1.2 or higher.\n## References\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/5.7.0)\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/6.34.0)\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/7.1.2)\n- [GitHub Wiki](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki/zipcve)\n",
+      "epssDetails": {
+        "percentile": "0.82201",
+        "probability": "0.02011",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-21319"
+        ],
+        "CWE": [
+          "CWE-400"
+        ],
+        "GHSA": [
+          "GHSA-59j7-ghrg-fj52",
+          "GHSA-8g9c-28fc-mcx2"
+        ]
+      },
+      "packageName": "Microsoft.IdentityModel.JsonWebTokens",
+      "proprietary": false,
+      "creationTime": "2024-01-09T19:56:52.172230Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-01-09T18:28:03Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "nuget",
+      "publicationTime": "2024-01-09T19:56:52.333644Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-03-11T09:48:57.857584Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "BrokenWebAPI@1.0.0",
+        "System.IdentityModel.Tokens.Jwt@6.14.0",
+        "Microsoft.IdentityModel.JsonWebTokens@6.14.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "Microsoft.IdentityModel.JsonWebTokens",
+      "version": "6.14.0"
+    },
+    {
+      "id": "SNYK-DOTNET-MICROSOFTIDENTITYMODELJSONWEBTOKENS-6148656",
+      "title": "Resource Exhaustion",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,5.7.0)",
+          "[6.5.0,6.34.0)",
+          "[7.0.0-preview,7.1.2)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "5.7.0",
+        "6.34.0",
+        "7.1.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "dotnet",
+      "severity": "medium",
+      "cvssScore": 6.8,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "microsoft.identitymodel.jsonwebtokens",
+      "references": [
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/5.7.0",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/6.34.0",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/7.1.2",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki/zipcve",
+          "title": "GitHub Wiki"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.8,
+          "modificationTime": "2024-03-11T09:48:54.334896Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.8,
+          "modificationTime": "2024-03-11T09:48:57.857584Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-06T14:09:41.211448Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:48:54.334896Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:48:57.857584Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Resource Exhaustion by processing JSON Web Encryption (JWE) tokens with a high compression ratio. An attacker can cause excessive memory allocation and processing time during decompression, leading to a denial-of-service condition. This is only exploitable if the attacker has access to the public encrypt key registered with the IDP (Entra ID).\n## Remediation\nUpgrade `Microsoft.IdentityModel.JsonWebTokens` to version 5.7.0, 6.34.0, 7.1.2 or higher.\n## References\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/5.7.0)\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/6.34.0)\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/7.1.2)\n- [GitHub Wiki](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki/zipcve)\n",
+      "epssDetails": {
+        "percentile": "0.82201",
+        "probability": "0.02011",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-21319"
+        ],
+        "CWE": [
+          "CWE-400"
+        ],
+        "GHSA": [
+          "GHSA-59j7-ghrg-fj52",
+          "GHSA-8g9c-28fc-mcx2"
+        ]
+      },
+      "packageName": "Microsoft.IdentityModel.JsonWebTokens",
+      "proprietary": false,
+      "creationTime": "2024-01-09T19:56:52.172230Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-01-09T18:28:03Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "nuget",
+      "publicationTime": "2024-01-09T19:56:52.333644Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-03-11T09:48:57.857584Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "BrokenWebAPI@1.0.0",
+        "Microsoft.AspNetCore.Authentication.JwtBearer@6.0.0",
+        "Microsoft.IdentityModel.Protocols.OpenIdConnect@6.10.0",
+        "System.IdentityModel.Tokens.Jwt@6.14.0",
+        "Microsoft.IdentityModel.JsonWebTokens@6.14.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "Microsoft.IdentityModel.JsonWebTokens",
+      "version": "6.14.0"
+    },
+    {
+      "id": "SNYK-DOTNET-SWASHBUCKLEASPNETCORESWAGGERUI-5426095",
+      "title": "Server-side Request Forgery (SSRF)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N/E:F",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,6.3)"
+        ]
+      },
+      "exploit": "Functional",
+      "fixedIn": [
+        "6.3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "dotnet",
+      "severity": "medium",
+      "cvssScore": 5.4,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "swashbuckle.aspnetcore.swaggerui",
+      "references": [
+        {
+          "url": "https://www.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/",
+          "title": "Blog Post"
+        },
+        {
+          "url": "https://github.com/domaindrivendev/Swashbuckle.AspNetCore/commit/401c7cb81e5efe835ceb8aae23e82057d57c7d29",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/swagger-api/swagger-ui/commit/01a3e55960f864a0acf6a8d06e5ddaf6776a7f76",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/swagger-api/swagger-ui/issues/4872",
+          "title": "GitHub Issue"
+        },
+        {
+          "url": "https://www.exploit-db.com/exploits/51379",
+          "title": "Exploit DB"
+        },
+        {
+          "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/headless/cves/2018/CVE-2018-25031.yaml",
+          "title": "Nuclei Templates"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 4.3,
+          "modificationTime": "2024-03-11T09:49:29.803917Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.4,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-05-09T11:46:24.740657Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 4.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:49:29.803917Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Server-side Request Forgery (SSRF) via the `?url` parameter, which was intended to allow displaying remote OpenAPI definitions. This functionality may pose a risk for users who host their own SwaggerUI instances. In particular, including remote OpenAPI definitions opens a vector for phishing attacks by abusing the trusted names/domains of self-hosted instances.\n\n**NOTE:** This vulnerability has also been identified as: [CVE-2021-46708](https://security.snyk.io/vuln/SNYK-DOTNET-SWASHBUCKLEASPNETCORESWAGGERUI-6056391)\n\n## Remediation\nUpgrade `Swashbuckle.AspNetCore.SwaggerUI` to version 6.3 or higher.\n## References\n- [Blog Post](https://www.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/)\n- [GitHub Commit](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/commit/401c7cb81e5efe835ceb8aae23e82057d57c7d29)\n- [GitHub Commit](https://github.com/swagger-api/swagger-ui/commit/01a3e55960f864a0acf6a8d06e5ddaf6776a7f76)\n- [GitHub Issue](https://github.com/swagger-api/swagger-ui/issues/4872)\n- [Exploit DB](https://www.exploit-db.com/exploits/51379)\n- [Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates/blob/main/headless/cves/2018/CVE-2018-25031.yaml)\n",
+      "epssDetails": {
+        "percentile": "0.99213",
+        "probability": "0.83100",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2018-25031"
+        ],
+        "CWE": [
+          "CWE-918"
+        ],
+        "GHSA": [
+          "GHSA-qrmm-w75w-3wpx"
+        ]
+      },
+      "packageName": "Swashbuckle.AspNetCore.SwaggerUI",
+      "proprietary": false,
+      "creationTime": "2023-04-18T15:14:32.018735Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2021-12-09T19:08:38Z",
+      "exploitDetails": {
+        "sources": [
+          "ExploitDB",
+          "Nuclei Templates",
+          "Snyk"
+        ],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Functional",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Proof of Concept",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "nuget",
+      "publicationTime": "2021-12-10T16:45:52Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-10-14T14:56:08.223879Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "BrokenWebAPI@1.0.0",
+        "Swashbuckle.AspNetCore@6.2.3",
+        "Swashbuckle.AspNetCore.SwaggerUI@6.2.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "Swashbuckle.AspNetCore.SwaggerUI",
+      "version": "6.2.3"
+    },
+    {
+      "id": "SNYK-DOTNET-SWASHBUCKLEASPNETCORESWAGGERUI-6056391",
+      "title": "Server-side Request Forgery (SSRF)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,6.3)"
+        ]
+      },
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "6.3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "dotnet",
+      "severity": "medium",
+      "cvssScore": 5.4,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "swashbuckle.aspnetcore.swaggerui",
+      "references": [
+        {
+          "url": "https://www.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/",
+          "title": "Blog Post"
+        },
+        {
+          "url": "https://github.com/domaindrivendev/Swashbuckle.AspNetCore/commit/401c7cb81e5efe835ceb8aae23e82057d57c7d29",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/swagger-api/swagger-ui/commit/01a3e55960f864a0acf6a8d06e5ddaf6776a7f76",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/swagger-api/swagger-ui/issues/4872",
+          "title": "GitHub Issue"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "cvssV3BaseScore": 6.1,
+          "modificationTime": "2024-03-11T09:49:29.654992Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.4,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-05-09T11:47:13.730558Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 6.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:49:29.654992Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Server-side Request Forgery (SSRF) via the `?url` parameter, which was intended to allow displaying remote OpenAPI definitions. This functionality may pose a risk for users who host their own SwaggerUI instances. In particular, including remote OpenAPI definitions opens a vector for phishing attacks by abusing the trusted names/domains of self-hosted instances.\n\n**NOTE:** This vulnerability has also been identified as: [CVE-2018-25031](https://security.snyk.io/vuln/SNYK-DOTNET-SWASHBUCKLEASPNETCORESWAGGERUI-5426095)\n\n## Remediation\nUpgrade `Swashbuckle.AspNetCore.SwaggerUI` to version 6.3 or higher.\n## References\n- [Blog Post](https://www.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/)\n- [GitHub Commit](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/commit/401c7cb81e5efe835ceb8aae23e82057d57c7d29)\n- [GitHub Commit](https://github.com/swagger-api/swagger-ui/commit/01a3e55960f864a0acf6a8d06e5ddaf6776a7f76)\n- [GitHub Issue](https://github.com/swagger-api/swagger-ui/issues/4872)\n",
+      "epssDetails": {
+        "percentile": "0.37049",
+        "probability": "0.00183",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-46708"
+        ],
+        "CWE": [
+          "CWE-918"
+        ],
+        "GHSA": [
+          "GHSA-qrmm-w75w-3wpx"
+        ]
+      },
+      "packageName": "Swashbuckle.AspNetCore.SwaggerUI",
+      "proprietary": false,
+      "creationTime": "2023-11-14T13:41:20.955384Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2021-12-09T19:08:38Z",
+      "exploitDetails": {
+        "sources": [
+          "Snyk"
+        ],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Proof of Concept",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Proof of Concept",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "nuget",
+      "publicationTime": "2021-12-10T16:45:52Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-05-09T11:47:13.730558Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "BrokenWebAPI@1.0.0",
+        "Swashbuckle.AspNetCore@6.2.3",
+        "Swashbuckle.AspNetCore.SwaggerUI@6.2.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "Swashbuckle.AspNetCore.SwaggerUI",
+      "version": "6.2.3"
+    },
+    {
+      "id": "SNYK-DOTNET-SYSTEMDATASQLCLIENT-3110424",
+      "title": "Information Exposure",
+      "CVSSv3": "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,4.8.5)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.8.5"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": "This vulnerability is only applicable on applications that communicate with Microsoft SQL Server."
+      },
+      "language": "dotnet",
+      "severity": "medium",
+      "cvssScore": 5.8,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "system.data.sqlclient",
+      "references": [
+        {
+          "url": "https://github.com/dotnet/runtime/issues/78042",
+          "title": "GitHub Issue"
+        },
+        {
+          "url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2022-41064",
+          "title": "Microsoft Advisory"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.8,
+          "modificationTime": "2024-03-11T09:52:24.179985Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-06T14:06:46.548528Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 5.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:52:24.179985Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Information Exposure. When a timeout occurs under a high load, it can cause incorrect data to be returned as the result of an asynchronously executed query.\r\n\r\n**Notes:**\r\n\r\n1) This vulnerability only affects applications that communicate with Microsoft SQL Server.\r\n\r\n2) Exploiting this vulnerability requires an attacker to be within the SQL Connection Pool.\n## Remediation\nUpgrade `System.Data.SqlClient` to version 4.8.5 or higher.\n## References\n- [GitHub Issue](https://github.com/dotnet/runtime/issues/78042)\n- [Microsoft Advisory](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2022-41064)\n",
+      "epssDetails": {
+        "percentile": "0.20069",
+        "probability": "0.00076",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-41064"
+        ],
+        "CWE": [
+          "CWE-200"
+        ],
+        "GHSA": [
+          "GHSA-8g2p-5pqh-5jmc"
+        ]
+      },
+      "packageName": "System.Data.SqlClient",
+      "proprietary": false,
+      "creationTime": "2022-11-09T10:25:57.349074Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2022-11-08T23:00:22Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "nuget",
+      "publicationTime": "2022-11-09T13:39:28.932140Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-03-11T09:52:24.179985Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "BrokenWebAPI@1.0.0",
+        "System.Data.SqlClient@4.8.2"
+      ],
+      "upgradePath": [
+        false,
+        "System.Data.SqlClient@4.8.5"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "System.Data.SqlClient",
+      "version": "4.8.2"
+    },
+    {
+      "id": "SNYK-DOTNET-SYSTEMDATASQLCLIENT-6149433",
+      "title": "Unprotected Storage of Credentials",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "credit": [
+        "Vishal Mishra",
+        "Anita Gaud"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,4.8.6)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.8.6"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "dotnet",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "system.data.sqlclient",
+      "references": [
+        {
+          "url": "https://github.com/dotnet/SqlClient/commit/4deb800c9534992d80573bcdb39439bece4ce0d5",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2255384",
+          "title": "RedHat Bugzilla Bug"
+        },
+        {
+          "url": "https://github.com/dotnet/SqlClient/blob/2e4d1b69793e7ca3d7d9f2bc85206b933808ef3c/release-notes/2.1/2.1.7.md?plain=1%23L9",
+          "title": "Release Notes"
+        },
+        {
+          "url": "https://github.com/dotnet/SqlClient/blob/2e4d1b69793e7ca3d7d9f2bc85206b933808ef3c/release-notes/3.1/3.1.5.md?plain=1%23L9",
+          "title": "Release Notes"
+        },
+        {
+          "url": "https://github.com/dotnet/SqlClient/blob/2e4d1b69793e7ca3d7d9f2bc85206b933808ef3c/release-notes/4.0/4.0.5.md?plain=1%23L9",
+          "title": "Release Notes"
+        },
+        {
+          "url": "https://github.com/dotnet/SqlClient/blob/2e4d1b69793e7ca3d7d9f2bc85206b933808ef3c/release-notes/5.1/5.1.3.md?plain=1%23L9",
+          "title": "Release Notes"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+          "cvssV3BaseScore": 8.7,
+          "modificationTime": "2024-03-11T09:48:53.113679Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2024-03-11T09:48:57.544126Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-06T14:09:48.331928Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+          "assigner": "NVD",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:48:53.113679Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:48:57.544126Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Unprotected Storage of Credentials. An attacker can steal authentication credentials intended for the database server by performing an adversary-in-the-middle attack between the SQL client and the SQL server, even if the connection is established over an encrypted channel like TLS.\n## Remediation\nUpgrade `System.Data.SqlClient` to version 4.8.6 or higher.\n## References\n- [GitHub Commit](https://github.com/dotnet/SqlClient/commit/4deb800c9534992d80573bcdb39439bece4ce0d5)\n- [RedHat Bugzilla Bug](https://bugzilla.redhat.com/show_bug.cgi?id=2255384)\n- [Release Notes](https://github.com/dotnet/SqlClient/blob/2e4d1b69793e7ca3d7d9f2bc85206b933808ef3c/release-notes/2.1/2.1.7.md?plain=1#L9)\n- [Release Notes](https://github.com/dotnet/SqlClient/blob/2e4d1b69793e7ca3d7d9f2bc85206b933808ef3c/release-notes/3.1/3.1.5.md?plain=1#L9)\n- [Release Notes](https://github.com/dotnet/SqlClient/blob/2e4d1b69793e7ca3d7d9f2bc85206b933808ef3c/release-notes/4.0/4.0.5.md?plain=1#L9)\n- [Release Notes](https://github.com/dotnet/SqlClient/blob/2e4d1b69793e7ca3d7d9f2bc85206b933808ef3c/release-notes/5.1/5.1.3.md?plain=1#L9)\n",
+      "epssDetails": {
+        "percentile": "0.53793",
+        "probability": "0.00339",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-0056"
+        ],
+        "CWE": [
+          "CWE-420"
+        ]
+      },
+      "packageName": "System.Data.SqlClient",
+      "proprietary": false,
+      "creationTime": "2024-01-10T11:07:16.686561Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-01-09T00:00:00Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "nuget",
+      "publicationTime": "2024-01-10T12:57:04.830720Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-03-11T09:48:57.544126Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "BrokenWebAPI@1.0.0",
+        "System.Data.SqlClient@4.8.2"
+      ],
+      "upgradePath": [
+        false,
+        "System.Data.SqlClient@4.8.6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "System.Data.SqlClient",
+      "version": "4.8.2"
+    },
+    {
+      "id": "SNYK-DOTNET-SYSTEMIDENTITYMODELTOKENSJWT-6148655",
+      "title": "Resource Exhaustion",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,5.7.0)",
+          "[6.5.0,6.34.0)",
+          "[7.0.0-preview,7.1.2)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "5.7.0",
+        "6.34.0",
+        "7.1.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "dotnet",
+      "severity": "medium",
+      "cvssScore": 6.8,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "system.identitymodel.tokens.jwt",
+      "references": [
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/5.7.0",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/6.34.0",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/7.1.2",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki/zipcve",
+          "title": "GitHub Wiki"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.8,
+          "modificationTime": "2024-03-11T09:48:54.334896Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.8,
+          "modificationTime": "2024-03-11T09:48:57.857584Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-06T14:09:41.211448Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:48:54.334896Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:48:57.857584Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Resource Exhaustion by processing JSON Web Encryption (JWE) tokens with a high compression ratio. An attacker can cause excessive memory allocation and processing time during decompression, leading to a denial-of-service condition. This is only exploitable if the attacker has access to the public encrypt key registered with the IDP (Entra ID).\n## Remediation\nUpgrade `System.IdentityModel.Tokens.Jwt` to version 5.7.0, 6.34.0, 7.1.2 or higher.\n## References\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/5.7.0)\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/6.34.0)\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/7.1.2)\n- [GitHub Wiki](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki/zipcve)\n",
+      "epssDetails": {
+        "percentile": "0.82201",
+        "probability": "0.02011",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-21319"
+        ],
+        "CWE": [
+          "CWE-400"
+        ],
+        "GHSA": [
+          "GHSA-59j7-ghrg-fj52",
+          "GHSA-8g9c-28fc-mcx2"
+        ]
+      },
+      "packageName": "System.IdentityModel.Tokens.Jwt",
+      "proprietary": false,
+      "creationTime": "2024-01-09T19:56:51.920182Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-01-09T18:28:03Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "nuget",
+      "publicationTime": "2024-01-09T19:56:52.152671Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-03-11T09:48:57.857584Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "BrokenWebAPI@1.0.0",
+        "System.IdentityModel.Tokens.Jwt@6.14.0"
+      ],
+      "upgradePath": [
+        false,
+        "System.IdentityModel.Tokens.Jwt@6.34.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "System.IdentityModel.Tokens.Jwt",
+      "version": "6.14.0"
+    },
+    {
+      "id": "SNYK-DOTNET-SYSTEMIDENTITYMODELTOKENSJWT-6148655",
+      "title": "Resource Exhaustion",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,5.7.0)",
+          "[6.5.0,6.34.0)",
+          "[7.0.0-preview,7.1.2)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "5.7.0",
+        "6.34.0",
+        "7.1.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "dotnet",
+      "severity": "medium",
+      "cvssScore": 6.8,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "system.identitymodel.tokens.jwt",
+      "references": [
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/5.7.0",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/6.34.0",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/7.1.2",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki/zipcve",
+          "title": "GitHub Wiki"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.8,
+          "modificationTime": "2024-03-11T09:48:54.334896Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.8,
+          "modificationTime": "2024-03-11T09:48:57.857584Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-06T14:09:41.211448Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:48:54.334896Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:48:57.857584Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Resource Exhaustion by processing JSON Web Encryption (JWE) tokens with a high compression ratio. An attacker can cause excessive memory allocation and processing time during decompression, leading to a denial-of-service condition. This is only exploitable if the attacker has access to the public encrypt key registered with the IDP (Entra ID).\n## Remediation\nUpgrade `System.IdentityModel.Tokens.Jwt` to version 5.7.0, 6.34.0, 7.1.2 or higher.\n## References\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/5.7.0)\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/6.34.0)\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/7.1.2)\n- [GitHub Wiki](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki/zipcve)\n",
+      "epssDetails": {
+        "percentile": "0.82201",
+        "probability": "0.02011",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-21319"
+        ],
+        "CWE": [
+          "CWE-400"
+        ],
+        "GHSA": [
+          "GHSA-59j7-ghrg-fj52",
+          "GHSA-8g9c-28fc-mcx2"
+        ]
+      },
+      "packageName": "System.IdentityModel.Tokens.Jwt",
+      "proprietary": false,
+      "creationTime": "2024-01-09T19:56:51.920182Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-01-09T18:28:03Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "nuget",
+      "publicationTime": "2024-01-09T19:56:52.152671Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-03-11T09:48:57.857584Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "BrokenWebAPI@1.0.0",
+        "Microsoft.AspNetCore.Authentication.JwtBearer@6.0.0",
+        "Microsoft.IdentityModel.Protocols.OpenIdConnect@6.10.0",
+        "System.IdentityModel.Tokens.Jwt@6.14.0"
+      ],
+      "upgradePath": [
+        false,
+        "Microsoft.AspNetCore.Authentication.JwtBearer@6.34.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "System.IdentityModel.Tokens.Jwt",
+      "version": "6.14.0"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 25,
+  "org": "etembayoglu",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "nuget",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false,
+    "autoApproveIgnores": false
+  },
+  "summary": "8 vulnerable dependency paths",
+  "remediation": {
+    "unresolved": [
+      {
+        "id": "SNYK-DOTNET-MICROSOFTIDENTITYMODELJSONWEBTOKENS-6148656",
+        "title": "Resource Exhaustion",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+        "credit": [
+          "Unknown"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[,5.7.0)",
+            "[6.5.0,6.34.0)",
+            "[7.0.0-preview,7.1.2)"
+          ]
+        },
+        "exploit": "Not Defined",
+        "fixedIn": [
+          "5.7.0",
+          "6.34.0",
+          "7.1.2"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "dotnet",
+        "severity": "medium",
+        "cvssScore": 6.8,
+        "functions": [],
+        "malicious": false,
+        "isDisputed": false,
+        "moduleName": "microsoft.identitymodel.jsonwebtokens",
+        "references": [
+          {
+            "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/5.7.0",
+            "title": "GitHub Release"
+          },
+          {
+            "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/6.34.0",
+            "title": "GitHub Release"
+          },
+          {
+            "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/7.1.2",
+            "title": "GitHub Release"
+          },
+          {
+            "url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki/zipcve",
+            "title": "GitHub Wiki"
+          }
+        ],
+        "cvssDetails": [
+          {
+            "assigner": "NVD",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+            "cvssV3BaseScore": 6.8,
+            "modificationTime": "2024-03-11T09:48:54.334896Z"
+          },
+          {
+            "assigner": "Red Hat",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+            "cvssV3BaseScore": 6.8,
+            "modificationTime": "2024-03-11T09:48:57.857584Z"
+          }
+        ],
+        "cvssSources": [
+          {
+            "type": "primary",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+            "assigner": "Snyk",
+            "severity": "medium",
+            "baseScore": 6.8,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-03-06T14:09:41.211448Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+            "assigner": "NVD",
+            "severity": "medium",
+            "baseScore": 6.8,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-03-11T09:48:54.334896Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+            "assigner": "Red Hat",
+            "severity": "medium",
+            "baseScore": 6.8,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-03-11T09:48:57.857584Z"
+          }
+        ],
+        "description": "## Overview\n\nAffected versions of this package are vulnerable to Resource Exhaustion by processing JSON Web Encryption (JWE) tokens with a high compression ratio. An attacker can cause excessive memory allocation and processing time during decompression, leading to a denial-of-service condition. This is only exploitable if the attacker has access to the public encrypt key registered with the IDP (Entra ID).\n## Remediation\nUpgrade `Microsoft.IdentityModel.JsonWebTokens` to version 5.7.0, 6.34.0, 7.1.2 or higher.\n## References\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/5.7.0)\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/6.34.0)\n- [GitHub Release](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/releases/tag/7.1.2)\n- [GitHub Wiki](https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki/zipcve)\n",
+        "epssDetails": {
+          "percentile": "0.82201",
+          "probability": "0.02011",
+          "modelVersion": "v2025.03.14"
+        },
+        "identifiers": {
+          "CVE": [
+            "CVE-2024-21319"
+          ],
+          "CWE": [
+            "CWE-400"
+          ],
+          "GHSA": [
+            "GHSA-59j7-ghrg-fj52",
+            "GHSA-8g9c-28fc-mcx2"
+          ]
+        },
+        "packageName": "Microsoft.IdentityModel.JsonWebTokens",
+        "proprietary": false,
+        "creationTime": "2024-01-09T19:56:52.172230Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2024-01-09T18:28:03Z",
+        "exploitDetails": {
+          "sources": [],
+          "maturityLevels": [
+            {
+              "type": "secondary",
+              "level": "Not Defined",
+              "format": "CVSSv3"
+            },
+            {
+              "type": "primary",
+              "level": "Not Defined",
+              "format": "CVSSv4"
+            }
+          ]
+        },
+        "packageManager": "nuget",
+        "publicationTime": "2024-01-09T19:56:52.333644Z",
+        "severityBasedOn": "CVSS",
+        "modificationTime": "2024-03-11T09:48:57.857584Z",
+        "socialTrendAlert": false,
+        "packagePopularityRank": 99,
+        "from": [
+          "BrokenWebAPI@1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer@6.0.0",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect@6.10.0",
+          "System.IdentityModel.Tokens.Jwt@6.14.0",
+          "Microsoft.IdentityModel.JsonWebTokens@6.14.0"
+        ],
+        "upgradePath": [],
+        "isUpgradable": false,
+        "isPatchable": false,
+        "isPinnable": false,
+        "isRuntime": false,
+        "name": "Microsoft.IdentityModel.JsonWebTokens",
+        "version": "6.14.0",
+        "severityWithCritical": "medium"
+      },
+      {
+        "id": "SNYK-DOTNET-SWASHBUCKLEASPNETCORESWAGGERUI-5426095",
+        "title": "Server-side Request Forgery (SSRF)",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N/E:F",
+        "credit": [
+          "Unknown"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[,6.3)"
+          ]
+        },
+        "exploit": "Functional",
+        "fixedIn": [
+          "6.3"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "dotnet",
+        "severity": "medium",
+        "cvssScore": 5.4,
+        "functions": [],
+        "malicious": false,
+        "isDisputed": false,
+        "moduleName": "swashbuckle.aspnetcore.swaggerui",
+        "references": [
+          {
+            "url": "https://www.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/",
+            "title": "Blog Post"
+          },
+          {
+            "url": "https://github.com/domaindrivendev/Swashbuckle.AspNetCore/commit/401c7cb81e5efe835ceb8aae23e82057d57c7d29",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://github.com/swagger-api/swagger-ui/commit/01a3e55960f864a0acf6a8d06e5ddaf6776a7f76",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://github.com/swagger-api/swagger-ui/issues/4872",
+            "title": "GitHub Issue"
+          },
+          {
+            "url": "https://www.exploit-db.com/exploits/51379",
+            "title": "Exploit DB"
+          },
+          {
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/headless/cves/2018/CVE-2018-25031.yaml",
+            "title": "Nuclei Templates"
+          }
+        ],
+        "cvssDetails": [
+          {
+            "assigner": "NVD",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+            "cvssV3BaseScore": 4.3,
+            "modificationTime": "2024-03-11T09:49:29.803917Z"
+          }
+        ],
+        "cvssSources": [
+          {
+            "type": "primary",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P",
+            "assigner": "Snyk",
+            "severity": "medium",
+            "baseScore": 5.4,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-05-09T11:46:24.740657Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+            "assigner": "NVD",
+            "severity": "medium",
+            "baseScore": 4.3,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-03-11T09:49:29.803917Z"
+          }
+        ],
+        "description": "## Overview\n\nAffected versions of this package are vulnerable to Server-side Request Forgery (SSRF) via the `?url` parameter, which was intended to allow displaying remote OpenAPI definitions. This functionality may pose a risk for users who host their own SwaggerUI instances. In particular, including remote OpenAPI definitions opens a vector for phishing attacks by abusing the trusted names/domains of self-hosted instances.\n\n**NOTE:** This vulnerability has also been identified as: [CVE-2021-46708](https://security.snyk.io/vuln/SNYK-DOTNET-SWASHBUCKLEASPNETCORESWAGGERUI-6056391)\n\n## Remediation\nUpgrade `Swashbuckle.AspNetCore.SwaggerUI` to version 6.3 or higher.\n## References\n- [Blog Post](https://www.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/)\n- [GitHub Commit](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/commit/401c7cb81e5efe835ceb8aae23e82057d57c7d29)\n- [GitHub Commit](https://github.com/swagger-api/swagger-ui/commit/01a3e55960f864a0acf6a8d06e5ddaf6776a7f76)\n- [GitHub Issue](https://github.com/swagger-api/swagger-ui/issues/4872)\n- [Exploit DB](https://www.exploit-db.com/exploits/51379)\n- [Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates/blob/main/headless/cves/2018/CVE-2018-25031.yaml)\n",
+        "epssDetails": {
+          "percentile": "0.99213",
+          "probability": "0.83100",
+          "modelVersion": "v2025.03.14"
+        },
+        "identifiers": {
+          "CVE": [
+            "CVE-2018-25031"
+          ],
+          "CWE": [
+            "CWE-918"
+          ],
+          "GHSA": [
+            "GHSA-qrmm-w75w-3wpx"
+          ]
+        },
+        "packageName": "Swashbuckle.AspNetCore.SwaggerUI",
+        "proprietary": false,
+        "creationTime": "2023-04-18T15:14:32.018735Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2021-12-09T19:08:38Z",
+        "exploitDetails": {
+          "sources": [
+            "ExploitDB",
+            "Nuclei Templates",
+            "Snyk"
+          ],
+          "maturityLevels": [
+            {
+              "type": "secondary",
+              "level": "Functional",
+              "format": "CVSSv3"
+            },
+            {
+              "type": "primary",
+              "level": "Proof of Concept",
+              "format": "CVSSv4"
+            }
+          ]
+        },
+        "packageManager": "nuget",
+        "publicationTime": "2021-12-10T16:45:52Z",
+        "severityBasedOn": "CVSS",
+        "modificationTime": "2024-10-14T14:56:08.223879Z",
+        "socialTrendAlert": false,
+        "packagePopularityRank": 99,
+        "from": [
+          "BrokenWebAPI@1.0.0",
+          "Swashbuckle.AspNetCore@6.2.3",
+          "Swashbuckle.AspNetCore.SwaggerUI@6.2.3"
+        ],
+        "upgradePath": [],
+        "isUpgradable": false,
+        "isPatchable": false,
+        "isPinnable": false,
+        "isRuntime": false,
+        "name": "Swashbuckle.AspNetCore.SwaggerUI",
+        "version": "6.2.3",
+        "severityWithCritical": "medium"
+      },
+      {
+        "id": "SNYK-DOTNET-SWASHBUCKLEASPNETCORESWAGGERUI-6056391",
+        "title": "Server-side Request Forgery (SSRF)",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P",
+        "credit": [
+          "Unknown"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[,6.3)"
+          ]
+        },
+        "exploit": "Proof of Concept",
+        "fixedIn": [
+          "6.3"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "dotnet",
+        "severity": "medium",
+        "cvssScore": 5.4,
+        "functions": [],
+        "malicious": false,
+        "isDisputed": false,
+        "moduleName": "swashbuckle.aspnetcore.swaggerui",
+        "references": [
+          {
+            "url": "https://www.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/",
+            "title": "Blog Post"
+          },
+          {
+            "url": "https://github.com/domaindrivendev/Swashbuckle.AspNetCore/commit/401c7cb81e5efe835ceb8aae23e82057d57c7d29",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://github.com/swagger-api/swagger-ui/commit/01a3e55960f864a0acf6a8d06e5ddaf6776a7f76",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://github.com/swagger-api/swagger-ui/issues/4872",
+            "title": "GitHub Issue"
+          }
+        ],
+        "cvssDetails": [
+          {
+            "assigner": "NVD",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+            "cvssV3BaseScore": 6.1,
+            "modificationTime": "2024-03-11T09:49:29.654992Z"
+          }
+        ],
+        "cvssSources": [
+          {
+            "type": "primary",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N/E:P",
+            "assigner": "Snyk",
+            "severity": "medium",
+            "baseScore": 5.4,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-05-09T11:47:13.730558Z"
+          },
+          {
+            "type": "secondary",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+            "assigner": "NVD",
+            "severity": "medium",
+            "baseScore": 6.1,
+            "cvssVersion": "3.1",
+            "modificationTime": "2024-03-11T09:49:29.654992Z"
+          }
+        ],
+        "description": "## Overview\n\nAffected versions of this package are vulnerable to Server-side Request Forgery (SSRF) via the `?url` parameter, which was intended to allow displaying remote OpenAPI definitions. This functionality may pose a risk for users who host their own SwaggerUI instances. In particular, including remote OpenAPI definitions opens a vector for phishing attacks by abusing the trusted names/domains of self-hosted instances.\n\n**NOTE:** This vulnerability has also been identified as: [CVE-2018-25031](https://security.snyk.io/vuln/SNYK-DOTNET-SWASHBUCKLEASPNETCORESWAGGERUI-5426095)\n\n## Remediation\nUpgrade `Swashbuckle.AspNetCore.SwaggerUI` to version 6.3 or higher.\n## References\n- [Blog Post](https://www.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/)\n- [GitHub Commit](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/commit/401c7cb81e5efe835ceb8aae23e82057d57c7d29)\n- [GitHub Commit](https://github.com/swagger-api/swagger-ui/commit/01a3e55960f864a0acf6a8d06e5ddaf6776a7f76)\n- [GitHub Issue](https://github.com/swagger-api/swagger-ui/issues/4872)\n",
+        "epssDetails": {
+          "percentile": "0.37049",
+          "probability": "0.00183",
+          "modelVersion": "v2025.03.14"
+        },
+        "identifiers": {
+          "CVE": [
+            "CVE-2021-46708"
+          ],
+          "CWE": [
+            "CWE-918"
+          ],
+          "GHSA": [
+            "GHSA-qrmm-w75w-3wpx"
+          ]
+        },
+        "packageName": "Swashbuckle.AspNetCore.SwaggerUI",
+        "proprietary": false,
+        "creationTime": "2023-11-14T13:41:20.955384Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2021-12-09T19:08:38Z",
+        "exploitDetails": {
+          "sources": [
+            "Snyk"
+          ],
+          "maturityLevels": [
+            {
+              "type": "secondary",
+              "level": "Proof of Concept",
+              "format": "CVSSv3"
+            },
+            {
+              "type": "primary",
+              "level": "Proof of Concept",
+              "format": "CVSSv4"
+            }
+          ]
+        },
+        "packageManager": "nuget",
+        "publicationTime": "2021-12-10T16:45:52Z",
+        "severityBasedOn": "CVSS",
+        "modificationTime": "2024-05-09T11:47:13.730558Z",
+        "socialTrendAlert": false,
+        "packagePopularityRank": 99,
+        "from": [
+          "BrokenWebAPI@1.0.0",
+          "Swashbuckle.AspNetCore@6.2.3",
+          "Swashbuckle.AspNetCore.SwaggerUI@6.2.3"
+        ],
+        "upgradePath": [],
+        "isUpgradable": false,
+        "isPatchable": false,
+        "isPinnable": false,
+        "isRuntime": false,
+        "name": "Swashbuckle.AspNetCore.SwaggerUI",
+        "version": "6.2.3",
+        "severityWithCritical": "medium"
+      }
+    ],
+    "upgrade": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer@6.0.0": {
+        "upgradeTo": "Microsoft.AspNetCore.Authentication.JwtBearer@6.34.0",
+        "upgrades": [
+          "System.IdentityModel.Tokens.Jwt@6.14.0"
+        ],
+        "vulns": [
+          "SNYK-DOTNET-SYSTEMIDENTITYMODELTOKENSJWT-6148655"
+        ]
+      },
+      "System.Data.SqlClient@4.8.2": {
+        "upgradeTo": "System.Data.SqlClient@4.8.6",
+        "upgrades": [
+          "System.Data.SqlClient@4.8.2",
+          "System.Data.SqlClient@4.8.2"
+        ],
+        "vulns": [
+          "SNYK-DOTNET-SYSTEMDATASQLCLIENT-6149433",
+          "SNYK-DOTNET-SYSTEMDATASQLCLIENT-3110424"
+        ]
+      },
+      "System.IdentityModel.Tokens.Jwt@6.14.0": {
+        "upgradeTo": "System.IdentityModel.Tokens.Jwt@6.34.0",
+        "upgrades": [
+          "System.IdentityModel.Tokens.Jwt@6.14.0"
+        ],
+        "vulns": [
+          "SNYK-DOTNET-SYSTEMIDENTITYMODELTOKENSJWT-6148655"
+        ]
+      }
+    },
+    "patch": {},
+    "ignore": {},
+    "pin": {}
+  },
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 6,
+  "targetFile": "obj/project.assets.json",
+  "projectName": "BrokenWebAPI",
+  "displayTargetFile": "obj/project.assets.json",
+  "hasUnknownVersions": false,
+  "path": "/project/BrokenWebAPI"
+}
