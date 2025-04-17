@@ -35,3 +35,13 @@ services:
     command: >
       snyk test --json-file-output=/project/snyk-image-results.json --docker bwa:2
 
+  zap:
+    image: zaproxy/zap-stable
+    container_name: zap
+    network_mode: host
+    command: >
+      zap-baseline.py
+      -t http://localhost:5000
+      -r zap-report.html
+    volumes:
+      - ./zap-reports:/zap/wrk
